@@ -1,8 +1,0 @@
-{
-    "name": "FrontendBoilerplate",
-    "private": true,
-    "dependencies": {
-		"bootstrap": "~3.0.3"
-	},
-    "devDependencies": {}
-}
