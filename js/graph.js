@@ -1,5 +1,6 @@
 var width = $(window).width(),
-    height = $(window).height();
+    height = $(window).height(),
+    radius = 8;
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -14,6 +15,7 @@ var simulation = d3.forceSimulation()
         return d.id;
     }))
     .force("charge", d3.forceManyBody())
+    .force("gravity",d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 d3.json("data/rf15.json", function(error, graph) {
@@ -68,12 +70,9 @@ d3.json("data/rf15.json", function(error, graph) {
             });
 
         node
-            .attr("cx", function(d) {
-                return d.x;
-            })
-            .attr("cy", function(d) {
-                return d.y;
-            });
+            .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+            .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+
     }
 
     //Toggle stores whether the highlighting is on
