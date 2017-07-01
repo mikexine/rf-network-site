@@ -6,8 +6,10 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var color = "orange";
-
+// define colors for nodes
+var color = d3.scaleOrdinal(d3.schemeAccent)
+    .domain(["1", "2", "3", "4"])   // these are the groups (stay, linger, walk, run)
+    .range(["#0049ff", "#ff0000", "#009933" , "#ffa500"]);
 
 
 var simulation = d3.forceSimulation()
@@ -18,7 +20,7 @@ var simulation = d3.forceSimulation()
     .force("gravity",d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("data/rf15.json", function(error, graph) {
+d3.json("data/rf15_groupbyactivities.json", function(error, graph) {
     if (error) throw error;
 
     var link = svg.append("g")
@@ -34,7 +36,7 @@ d3.json("data/rf15.json", function(error, graph) {
         .enter().append("circle")
         .attr("r", 8)
         .attr("fill", function(d) {
-            return color;
+            return color(d.group);
         })
         .call(d3.drag()
             .on("start", dragstarted)
@@ -46,6 +48,7 @@ d3.json("data/rf15.json", function(error, graph) {
         .text(function(d) {
             return d.id;
         });
+
 
     simulation
         .nodes(graph.nodes)
