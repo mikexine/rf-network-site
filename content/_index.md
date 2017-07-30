@@ -4,9 +4,9 @@ title: Home
 
 [<img src="https://github.com/goodroot/hugo-classic/raw/master/images/partywizard.gif" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/goodroot/hugo-classic)
 
-# Hugo.io - Classic
+# rf17.stream
 
-### For text focused goodness
+### A big data analysis of Roskilde Festival 2017
 
 About twenty years ago Jobs and Wozniak, the founders of Apple, came up with the very strange idea of selling information processing machines for use in the home. The business took off, and its founders made a lot of money and received the credit they deserved for being daring visionaries. But around the same time, Bill Gates and Paul Allen came up with an idea even stranger and more fantastical: **selling computer operating systems**. This was much weirder than the idea of Jobs and Wozniak.
 

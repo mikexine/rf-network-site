@@ -28,5 +28,5 @@ footnotereturnlinkcontents = "↩"
     url = "/index.xml"
 
 [params]
-    description = "A simple, minimal blog for those who love text."
-    footer = "Open-Source | [Github](https://github.com/goodroot/hugo-classic) | [Twitter](https://twitter.com/thegoodroot)"
+    description = "Data from Roskilde Festival"
+    footer = "Open-Source | [Github](https://github.com/rf-thesis) | [Twitter](https://twitter.com/mikexine)"
