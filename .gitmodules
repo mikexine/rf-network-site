@@ -1,0 +1,9 @@
+[submodule "hugo-theme-introduction"]
+	path = hugo-theme-introduction
+	url = git@github.com:vickylaiio/hugo-theme-introduction.git
+[submodule "themes/introduction"]
+	path = themes/introduction
+	url = git@github.com:vickylaiio/hugo-theme-introduction.git
+[submodule "themes/classic"]
+	path = themes/classic
+	url = git@github.com:goodroot/hugo-classic.git

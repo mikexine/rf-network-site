@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on rf17.stream</title>
+    <link>rf17.stream/tags/</link>
+    <description>Recent content in Tags on rf17.stream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="rf17.stream/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML</title>
+      <link>rf17.stream/tags/html/</link>
+      <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>rf17.stream/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juicy</title>
+      <link>rf17.stream/tags/juicy/</link>
+      <pubDate>Mon, 23 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>rf17.stream/tags/juicy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>rf17.stream/tags/markdown/</link>
+      <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>rf17.stream/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
